@@ -1,0 +1,980 @@
+languagesystem DFLT dflt;
+languagesystem latn dflt;
+
+@_a = [\a \a.li \a.ri \a.rn \a.li.ri \a.li.rn];
+@_b = [\b \b.li \b.ri \b.rn \b.li.ri \b.li.rn];
+@_c = [\c \c.li \c.ri \c.rn \c.li.ri \c.li.rn];
+@_d = [\d \d.li \d.ri \d.rn \d.li.ri \d.li.rn];
+@_e = [\e \e.li \e.ri \e.rn \e.li.ri \e.li.rn];
+@_f = [\f \f.li \f.ri \f.rn \f.li.ri \f.li.rn];
+@_g = [\g \g.li \g.ri \g.rn \g.li.ri \g.li.rn];
+@_h = [\h \h.li \h.ri \h.rn \h.li.ri \h.li.rn];
+@_i = [\i \i.li \i.ri \i.rn \i.li.ri \i.li.rn];
+@_j = [\j \j.li \j.ri \j.rn \j.li.ri \j.li.rn];
+@_k = [\k \k.li \k.ri \k.rn \k.li.ri \k.li.rn];
+@_l = [\l \l.li \l.ri \l.rn \l.li.ri \l.li.rn];
+@_m = [\m \m.li \m.ri \m.rn \m.li.ri \m.li.rn];
+@_n = [\n \n.li \n.ri \n.rn \n.li.ri \n.li.rn];
+@_o = [\o \o.li \o.ri \o.rn \o.li.ri \o.li.rn];
+@_p = [\p \p.li \p.ri \p.rn \p.li.ri \p.li.rn];
+@_q = [\q \q.li \q.ri \q.rn \q.li.ri \q.li.rn];
+@_r = [\r \r.li \r.ri \r.rn \r.li.ri \r.li.rn];
+@_s = [\s \s.li \s.ri \s.rn \s.li.ri \s.li.rn];
+@_t = [\t \t.li \t.ri \t.rn \t.li.ri \t.li.rn];
+@_u = [\u \u.li \u.ri \u.rn \u.li.ri \u.li.rn];
+@_v = [\v \v.li \v.ri \v.rn \v.li.ri \v.li.rn];
+@_w = [\w \w.li \w.ri \w.rn \w.li.ri \w.li.rn];
+@_x = [\x \x.li \x.ri \x.rn \x.li.ri \x.li.rn];
+@_y = [\y \y.li \y.ri \y.rn \y.li.ri \y.li.rn];
+@_z = [\z \z.li \z.ri \z.rn \z.li.ri \z.li.rn];
+
+@_A = [\A \A.rn \A.ri];
+@_H = [\H \H.rn \H.ri];
+@_K = [\K \K.rn \K.ri];
+@_L = [\L \L.rn \L.ri];
+@_M = [\M \M.rn \M.ri];
+@_R = [\R \R.rn \R.ri];
+@_U = [\U \U.rn \U.ri];
+@_Z = [\Z \Z.rn \Z.ri];
+@_J = [\J \J.rn \J.ri];
+
+
+
+@_li = [@_a @_b @_c @_d @_e @_f @_g @_h @_i @_j @_k @_l @_m @_n @_o @_p @_q @_r @_s @_t @_u @_v @_w @_x @_y @_z @_A @_H @_K @_L @_M @_R @_U @_Z @_J];
+@_ri = [@_a @_c @_d @_e @_g @_o @_q];
+@_rn = [@_m @_n @_r @_v @_x @_y @_z];
+
+@cc1_match_a = [\a ];
+@cc1_match_b = [\b ];
+@cc1_match_c = [\c ];
+@cc1_match_d = [\d ];
+@cc1_match_e = [\e ];
+@cc1_match_f = [\f ];
+@cc1_match_g = [\g ];
+@cc1_match_h = [\h ];
+@cc1_match_i = [\i ];
+@cc1_match_j = [\j ];
+@cc1_match_k = [\k ];
+@cc1_match_l = [\l ];
+@cc1_match_m = [\m ];
+@cc1_match_n = [\n ];
+@cc1_match_o = [\o ];
+@cc1_match_p = [\p ];
+@cc1_match_q = [\q ];
+@cc1_match_r = [\r ];
+@cc1_match_s = [\s ];
+@cc1_match_t = [\t ];
+@cc1_match_u = [\u ];
+@cc1_match_v = [\v ];
+@cc1_match_w = [\w ];
+@cc1_match_x = [\x ];
+@cc1_match_y = [\y ];
+@cc1_match_z = [\z ];
+
+@cc1_match_A = [\A ];
+@cc1_match_H = [\H ];
+@cc1_match_K = [\K ];
+@cc1_match_L = [\L ];
+@cc1_match_M = [\M ];
+@cc1_match_R = [\R ];
+@cc1_match_U = [\U ];
+@cc1_match_Z = [\Z ];
+@cc1_match_J = [\J ];
+
+@cc1_match_signal = [\period \colon \semicolon \question \comma \hyphen \quotation \apostrophe \lp \rp \exclamation \slash];
+
+lookup calt_a_li_ri {
+    sub @_li @cc1_match_a' @_ri  by [\a.li.ri ] ;
+} calt_a_li_ri;
+
+lookup calt_a_li_rn {
+    sub @_li @cc1_match_a' @_rn  by [\a.li.rn ] ;
+} calt_a_li_rn;
+
+lookup calt_a_li {
+    sub @_li @cc1_match_a'       by [\a.li ] ;
+} calt_a_li;
+
+lookup calt_a_ri {
+    sub @cc1_match_a' @_ri       by [\a.ri ] ;
+} calt_a_ri;
+
+lookup calt_a_rn {
+    sub @cc1_match_a' @_rn       by [\a.rn ] ;
+} calt_a_rn;
+
+lookup calt_b_li_ri {
+    sub @_li @cc1_match_b' @_ri  by [\b.li.ri ] ;
+} calt_b_li_ri;
+
+lookup calt_b_li_rn {
+    sub @_li @cc1_match_b' @_rn  by [\b.li.rn ] ;
+} calt_b_li_rn;
+
+lookup calt_b_li {
+    sub @_li @cc1_match_b'       by [\b.li ] ;
+} calt_b_li;
+
+lookup calt_b_ri {
+    sub @cc1_match_b' @_ri       by [\b.ri ] ;
+} calt_b_ri;
+
+lookup calt_b_rn {
+    sub @cc1_match_b' @_rn       by [\b.rn ] ;
+} calt_b_rn;
+
+lookup calt_c_li_ri {
+    sub @_li @cc1_match_c' @_ri  by [\c.li.ri ] ;
+} calt_c_li_ri;
+
+lookup calt_c_li_rn {
+    sub @_li @cc1_match_c' @_rn  by [\c.li.rn ] ;
+} calt_c_li_rn;
+
+lookup calt_c_li {
+    sub @_li @cc1_match_c'       by [\c.li ] ;
+} calt_c_li;
+
+lookup calt_c_ri {
+    sub @cc1_match_c' @_ri       by [\c.ri ] ;
+} calt_c_ri;
+
+lookup calt_c_rn {
+    sub @cc1_match_c' @_rn       by [\c.rn ] ;
+} calt_c_rn;
+
+lookup calt_d_li_ri {
+    sub @_li @cc1_match_d' @_ri  by [\d.li.ri ] ;
+} calt_d_li_ri;
+
+lookup calt_d_li_rn {
+    sub @_li @cc1_match_d' @_rn  by [\d.li.rn ] ;
+} calt_d_li_rn;
+
+lookup calt_d_li {
+    sub @_li @cc1_match_d'       by [\d.li ] ;
+} calt_d_li;
+
+lookup calt_d_ri {
+    sub @cc1_match_d' @_ri       by [\d.ri ] ;
+} calt_d_ri;
+
+lookup calt_d_rn {
+    sub @cc1_match_d' @_rn       by [\d.rn ] ;
+} calt_d_rn;
+
+lookup calt_e_li_ri {
+    sub @_li @cc1_match_e' @_ri  by [\e.li.ri ] ;
+} calt_e_li_ri;
+
+lookup calt_e_li_rn {
+    sub @_li @cc1_match_e' @_rn  by [\e.li.rn ] ;
+} calt_e_li_rn;
+
+lookup calt_e_li {
+    sub @_li @cc1_match_e'       by [\e.li ] ;
+} calt_e_li;
+
+lookup calt_e_ri {
+    sub @cc1_match_e' @_ri       by [\e.ri ] ;
+} calt_e_ri;
+
+lookup calt_e_rn {
+    sub @cc1_match_e' @_rn       by [\e.rn ] ;
+} calt_e_rn;
+
+lookup calt_f_li_ri {
+    sub @_li @cc1_match_f' @_ri  by [\f.li.ri ] ;
+} calt_f_li_ri;
+
+lookup calt_f_li_rn {
+    sub @_li @cc1_match_f' @_rn  by [\f.li.rn ] ;
+} calt_f_li_rn;
+
+lookup calt_f_li {
+    sub @_li @cc1_match_f'       by [\f.li ] ;
+} calt_f_li;
+
+lookup calt_f_ri {
+    sub @cc1_match_f' @_ri       by [\f.ri ] ;
+} calt_f_ri;
+
+lookup calt_f_rn {
+    sub @cc1_match_f' @_rn       by [\f.rn ] ;
+} calt_f_rn;
+
+lookup calt_g_li_ri {
+    sub @_li @cc1_match_g' @_ri  by [\g.li.ri ] ;
+} calt_g_li_ri;
+
+lookup calt_g_li_rn {
+    sub @_li @cc1_match_g' @_rn  by [\g.li.rn ] ;
+} calt_g_li_rn;
+
+lookup calt_g_li {
+    sub @_li @cc1_match_g'       by [\g.li ] ;
+} calt_g_li;
+
+lookup calt_g_ri {
+    sub @cc1_match_g' @_ri       by [\g.ri ] ;
+} calt_g_ri;
+
+lookup calt_g_rn {
+    sub @cc1_match_g' @_rn       by [\g.rn ] ;
+} calt_g_rn;
+
+lookup calt_h_li_ri {
+    sub @_li @cc1_match_h' @_ri  by [\h.li.ri ] ;
+} calt_h_li_ri;
+
+lookup calt_h_li_rn {
+    sub @_li @cc1_match_h' @_rn  by [\h.li.rn ] ;
+} calt_h_li_rn;
+
+lookup calt_h_li {
+    sub @_li @cc1_match_h'       by [\h.li ] ;
+} calt_h_li;
+
+lookup calt_h_ri {
+    sub @cc1_match_h' @_ri       by [\h.ri ] ;
+} calt_h_ri;
+
+lookup calt_h_rn {
+    sub @cc1_match_h' @_rn       by [\h.rn ] ;
+} calt_h_rn;
+
+lookup calt_i_li_ri {
+    sub @_li @cc1_match_i' @_ri  by [\i.li.ri ] ;
+} calt_i_li_ri;
+
+lookup calt_i_li_rn {
+    sub @_li @cc1_match_i' @_rn  by [\i.li.rn ] ;
+} calt_i_li_rn;
+
+lookup calt_i_li {
+    sub @_li @cc1_match_i'       by [\i.li ] ;
+} calt_i_li;
+
+lookup calt_i_ri {
+    sub @cc1_match_i' @_ri       by [\i.ri ] ;
+} calt_i_ri;
+
+lookup calt_i_rn {
+    sub @cc1_match_i' @_rn       by [\i.rn ] ;
+} calt_i_rn;
+
+lookup calt_j_li_ri {
+    sub @_li @cc1_match_j' @_ri  by [\j.li.ri ] ;
+} calt_j_li_ri;
+
+lookup calt_j_li_rn {
+    sub @_li @cc1_match_j' @_rn  by [\j.li.rn ] ;
+} calt_j_li_rn;
+
+lookup calt_j_li {
+    sub @_li @cc1_match_j'       by [\j.li ] ;
+} calt_j_li;
+
+lookup calt_j_ri {
+    sub @cc1_match_j' @_ri       by [\j.ri ] ;
+} calt_j_ri;
+
+lookup calt_j_rn {
+    sub @cc1_match_j' @_rn       by [\j.rn ] ;
+} calt_j_rn;
+
+lookup calt_k_li_ri {
+    sub @_li @cc1_match_k' @_ri  by [\k.li.ri ] ;
+} calt_k_li_ri;
+
+lookup calt_k_li_rn {
+    sub @_li @cc1_match_k' @_rn  by [\k.li.rn ] ;
+} calt_k_li_rn;
+
+lookup calt_k_li {
+    sub @_li @cc1_match_k'       by [\k.li ] ;
+} calt_k_li;
+
+lookup calt_k_ri {
+    sub @cc1_match_k' @_ri       by [\k.ri ] ;
+} calt_k_ri;
+
+lookup calt_k_rn {
+    sub @cc1_match_k' @_rn       by [\k.rn ] ;
+} calt_k_rn;
+
+lookup calt_l_li_ri {
+    sub @_li @cc1_match_l' @_ri  by [\l.li.ri ] ;
+} calt_l_li_ri;
+
+lookup calt_l_li_rn {
+    sub @_li @cc1_match_l' @_rn  by [\l.li.rn ] ;
+} calt_l_li_rn;
+
+lookup calt_l_li {
+    sub @_li @cc1_match_l'       by [\l.li ] ;
+} calt_l_li;
+
+lookup calt_l_ri {
+    sub @cc1_match_l' @_ri       by [\l.ri ] ;
+} calt_l_ri;
+
+lookup calt_l_rn {
+    sub @cc1_match_l' @_rn       by [\l.rn ] ;
+} calt_l_rn;
+
+lookup calt_m_li_ri {
+    sub @_li @cc1_match_m' @_ri  by [\m.li.ri ] ;
+} calt_m_li_ri;
+
+lookup calt_m_li_rn {
+    sub @_li @cc1_match_m' @_rn  by [\m.li.rn ] ;
+} calt_m_li_rn;
+
+lookup calt_m_li {
+    sub @_li @cc1_match_m'       by [\m.li ] ;
+} calt_m_li;
+
+lookup calt_m_ri {
+    sub @cc1_match_m' @_ri       by [\m.ri ] ;
+} calt_m_ri;
+
+lookup calt_m_rn {
+    sub @cc1_match_m' @_rn       by [\m.rn ] ;
+} calt_m_rn;
+
+lookup calt_n_li_ri {
+    sub @_li @cc1_match_n' @_ri  by [\n.li.ri ] ;
+} calt_n_li_ri;
+
+lookup calt_n_li_rn {
+    sub @_li @cc1_match_n' @_rn  by [\n.li.rn ] ;
+} calt_n_li_rn;
+
+lookup calt_n_li {
+    sub @_li @cc1_match_n'       by [\n.li ] ;
+} calt_n_li;
+
+lookup calt_n_ri {
+    sub @cc1_match_n' @_ri       by [\n.ri ] ;
+} calt_n_ri;
+
+lookup calt_n_rn {
+    sub @cc1_match_n' @_rn       by [\n.rn ] ;
+} calt_n_rn;
+
+lookup calt_o_li_ri {
+    sub @_li @cc1_match_o' @_ri  by [\o.li.ri ] ;
+} calt_o_li_ri;
+
+lookup calt_o_li_rn {
+    sub @_li @cc1_match_o' @_rn  by [\o.li.rn ] ;
+} calt_o_li_rn;
+
+lookup calt_o_li {
+    sub @_li @cc1_match_o'       by [\o.li ] ;
+} calt_o_li;
+
+lookup calt_o_ri {
+    sub @cc1_match_o' @_ri       by [\o.ri ] ;
+} calt_o_ri;
+
+lookup calt_o_rn {
+    sub @cc1_match_o' @_rn       by [\o.rn ] ;
+} calt_o_rn;
+
+lookup calt_p_li_ri {
+    sub @_li @cc1_match_p' @_ri  by [\p.li.ri ] ;
+} calt_p_li_ri;
+
+lookup calt_p_li_rn {
+    sub @_li @cc1_match_p' @_rn  by [\p.li.rn ] ;
+} calt_p_li_rn;
+
+lookup calt_p_li {
+    sub @_li @cc1_match_p'       by [\p.li ] ;
+} calt_p_li;
+
+lookup calt_p_ri {
+    sub @cc1_match_p' @_ri       by [\p.ri ] ;
+} calt_p_ri;
+
+lookup calt_p_rn {
+    sub @cc1_match_p' @_rn       by [\p.rn ] ;
+} calt_p_rn;
+
+lookup calt_q_li_ri {
+    sub @_li @cc1_match_q' @_ri  by [\q.li.ri ] ;
+} calt_q_li_ri;
+
+lookup calt_q_li_rn {
+    sub @_li @cc1_match_q' @_rn  by [\q.li.rn ] ;
+} calt_q_li_rn;
+
+lookup calt_q_li {
+    sub @_li @cc1_match_q'       by [\q.li ] ;
+} calt_q_li;
+
+lookup calt_q_ri {
+    sub @cc1_match_q' @_ri       by [\q.ri ] ;
+} calt_q_ri;
+
+lookup calt_q_rn {
+    sub @cc1_match_q' @_rn       by [\q.rn ] ;
+} calt_q_rn;
+
+lookup calt_r_li_ri {
+    sub @_li @cc1_match_r' @_ri  by [\r.li.ri ] ;
+} calt_r_li_ri;
+
+lookup calt_r_li_rn {
+    sub @_li @cc1_match_r' @_rn  by [\r.li.rn ] ;
+} calt_r_li_rn;
+
+lookup calt_r_li {
+    sub @_li @cc1_match_r'       by [\r.li ] ;
+} calt_r_li;
+
+lookup calt_r_ri {
+    sub @cc1_match_r' @_ri       by [\r.ri ] ;
+} calt_r_ri;
+
+lookup calt_r_rn {
+    sub @cc1_match_r' @_rn       by [\r.rn ] ;
+} calt_r_rn;
+
+lookup calt_s_li_ri {
+    sub @_li @cc1_match_s' @_ri  by [\s.li.ri ] ;
+} calt_s_li_ri;
+
+lookup calt_s_li_rn {
+    sub @_li @cc1_match_s' @_rn  by [\s.li.rn ] ;
+} calt_s_li_rn;
+
+lookup calt_s_li {
+    sub @_li @cc1_match_s'       by [\s.li ] ;
+} calt_s_li;
+
+lookup calt_s_ri {
+    sub @cc1_match_s' @_ri       by [\s.ri ] ;
+} calt_s_ri;
+
+lookup calt_s_rn {
+    sub @cc1_match_s' @_rn       by [\s.rn ] ;
+} calt_s_rn;
+
+lookup calt_t_li_ri {
+    sub @_li @cc1_match_t' @_ri  by [\t.li.ri ] ;
+} calt_t_li_ri;
+
+lookup calt_t_li_rn {
+    sub @_li @cc1_match_t' @_rn  by [\t.li.rn ] ;
+} calt_t_li_rn;
+
+lookup calt_t_li {
+    sub @_li @cc1_match_t'       by [\t.li ] ;
+} calt_t_li;
+
+lookup calt_t_ri {
+    sub @cc1_match_t' @_ri       by [\t.ri ] ;
+} calt_t_ri;
+
+lookup calt_t_rn {
+    sub @cc1_match_t' @_rn       by [\t.rn ] ;
+} calt_t_rn;
+
+lookup calt_u_li_ri {
+    sub @_li @cc1_match_u' @_ri  by [\u.li.ri ] ;
+} calt_u_li_ri;
+
+lookup calt_u_li_rn {
+    sub @_li @cc1_match_u' @_rn  by [\u.li.rn ] ;
+} calt_u_li_rn;
+
+lookup calt_u_li {
+    sub @_li @cc1_match_u'       by [\u.li ] ;
+} calt_u_li;
+
+lookup calt_u_ri {
+    sub @cc1_match_u' @_ri       by [\u.ri ] ;
+} calt_u_ri;
+
+lookup calt_u_rn {
+    sub @cc1_match_u' @_rn       by [\u.rn ] ;
+} calt_u_rn;
+
+lookup calt_v_li_ri {
+    sub @_li @cc1_match_v' @_ri  by [\v.li.ri ] ;
+} calt_v_li_ri;
+
+lookup calt_v_li_rn {
+    sub @_li @cc1_match_v' @_rn  by [\v.li.rn ] ;
+} calt_v_li_rn;
+
+lookup calt_v_li {
+    sub @_li @cc1_match_v'       by [\v.li ] ;
+} calt_v_li;
+
+lookup calt_v_ri {
+    sub @cc1_match_v' @_ri       by [\v.ri ] ;
+} calt_v_ri;
+
+lookup calt_v_rn {
+    sub @cc1_match_v' @_rn       by [\v.rn ] ;
+} calt_v_rn;
+
+lookup calt_w_li_ri {
+    sub @_li @cc1_match_w' @_ri  by [\w.li.ri ] ;
+} calt_w_li_ri;
+
+lookup calt_w_li_rn {
+    sub @_li @cc1_match_w' @_rn  by [\w.li.rn ] ;
+} calt_w_li_rn;
+
+lookup calt_w_li {
+    sub @_li @cc1_match_w'       by [\w.li ] ;
+} calt_w_li;
+
+lookup calt_w_ri {
+    sub @cc1_match_w' @_ri       by [\w.ri ] ;
+} calt_w_ri;
+
+lookup calt_w_rn {
+    sub @cc1_match_w' @_rn       by [\w.rn ] ;
+} calt_w_rn;
+
+lookup calt_x_li_ri {
+    sub @_li @cc1_match_x' @_ri  by [\x.li.ri ] ;
+} calt_x_li_ri;
+
+lookup calt_x_li_rn {
+    sub @_li @cc1_match_x' @_rn  by [\x.li.rn ] ;
+} calt_x_li_rn;
+
+lookup calt_x_li {
+    sub @_li @cc1_match_x'       by [\x.li ] ;
+} calt_x_li;
+
+lookup calt_x_ri {
+    sub @cc1_match_x' @_ri       by [\x.ri ] ;
+} calt_x_ri;
+
+lookup calt_x_rn {
+    sub @cc1_match_x' @_rn       by [\x.rn ] ;
+} calt_x_rn;
+
+lookup calt_y_li_ri {
+    sub @_li @cc1_match_y' @_ri  by [\y.li.ri ] ;
+} calt_y_li_ri;
+
+lookup calt_y_li_rn {
+    sub @_li @cc1_match_y' @_rn  by [\y.li.rn ] ;
+} calt_y_li_rn;
+
+lookup calt_y_li {
+    sub @_li @cc1_match_y'       by [\y.li ] ;
+} calt_y_li;
+
+lookup calt_y_ri {
+    sub @cc1_match_y' @_ri       by [\y.ri ] ;
+} calt_y_ri;
+
+lookup calt_y_rn {
+    sub @cc1_match_y' @_rn       by [\y.rn ] ;
+} calt_y_rn;
+
+lookup calt_z_li_ri {
+    sub @_li @cc1_match_z' @_ri  by [\z.li.ri ] ;
+} calt_z_li_ri;
+
+lookup calt_z_li_rn {
+    sub @_li @cc1_match_z' @_rn  by [\z.li.rn ] ;
+} calt_z_li_rn;
+
+lookup calt_z_li {
+    sub @_li @cc1_match_z'       by [\z.li ] ;
+} calt_z_li;
+
+lookup calt_z_ri {
+    sub @cc1_match_z' @_ri       by [\z.ri ] ;
+} calt_z_ri;
+
+lookup calt_z_rn {
+    sub @cc1_match_z' @_rn       by [\z.rn ] ;
+} calt_z_rn;
+
+lookup calt_A_ri {
+    sub @cc1_match_A' @_ri by [\A.ri];
+} calt_A_ri;
+
+lookup calt_A_rn {
+    sub @cc1_match_A' @_rn by [\A.rn];
+} calt_A_rn;
+
+lookup calt_H_ri {
+    sub @cc1_match_H' @_ri by [\H.ri];
+} calt_H_ri;
+
+lookup calt_H_rn {
+    sub @cc1_match_H' @_rn by [\H.rn];
+} calt_H_rn;
+
+lookup calt_K_ri {
+    sub @cc1_match_K' @_ri by [\K.ri];
+} calt_K_ri;
+
+lookup calt_K_rn {
+    sub @cc1_match_K' @_rn by [\K.rn];
+} calt_K_rn;
+
+lookup calt_L_ri {
+    sub @cc1_match_L' @_ri by [\L.ri];
+} calt_L_ri;
+
+lookup calt_L_rn {
+    sub @cc1_match_L' @_rn by [\L.rn];
+} calt_L_rn;
+
+lookup calt_M_ri {
+    sub @cc1_match_M' @_ri by [\M.ri];
+} calt_M_ri;
+
+lookup calt_M_rn {
+    sub @cc1_match_M' @_rn by [\M.rn];
+} calt_M_rn;
+
+lookup calt_R_ri {
+    sub @cc1_match_R' @_ri by [\R.ri];
+} calt_R_ri;
+
+lookup calt_R_rn {
+    sub @cc1_match_R' @_rn by [\R.rn];
+} calt_R_rn;
+
+lookup calt_U_ri {
+    sub @cc1_match_U' @_ri by [\U.ri];
+} calt_U_ri;
+
+lookup calt_U_rn {
+    sub @cc1_match_U' @_rn by [\U.rn];
+} calt_U_rn;
+
+lookup calt_Z_ri {
+    sub @cc1_match_Z' @_ri by [\Z.ri];
+} calt_Z_ri;
+
+lookup calt_Z_rn {
+    sub @cc1_match_Z' @_rn by [\Z.rn];
+} calt_Z_rn;
+
+lookup calt_J_ri {
+    sub @cc1_match_J' @_ri by [\J.ri];
+} calt_J_ri;
+
+lookup calt_J_rn {
+    sub @cc1_match_J' @_rn by [\J.rn];
+} calt_J_rn;
+
+feature calt {
+ script DFLT;
+    language dflt ;
+      lookup calt_a_li_ri;
+      lookup calt_a_li_rn;
+      lookup calt_a_li;
+      lookup calt_a_ri;
+      lookup calt_a_rn;
+      lookup calt_b_li_ri;
+      lookup calt_b_li_rn;
+      lookup calt_b_li;
+      lookup calt_b_ri;
+      lookup calt_b_rn;
+      lookup calt_c_li_ri;
+      lookup calt_c_li_rn;
+      lookup calt_c_li;
+      lookup calt_c_ri;
+      lookup calt_c_rn;
+      lookup calt_d_li_ri;
+      lookup calt_d_li_rn;
+      lookup calt_d_li;
+      lookup calt_d_ri;
+      lookup calt_d_rn;
+      lookup calt_e_li_ri;
+      lookup calt_e_li_rn;
+      lookup calt_e_li;
+      lookup calt_e_ri;
+      lookup calt_e_rn;
+      lookup calt_f_li_ri;
+      lookup calt_f_li_rn;
+      lookup calt_f_li;
+      lookup calt_f_ri;
+      lookup calt_f_rn;
+      lookup calt_g_li_ri;
+      lookup calt_g_li_rn;
+      lookup calt_g_li;
+      lookup calt_g_ri;
+      lookup calt_g_rn;
+      lookup calt_h_li_ri;
+      lookup calt_h_li_rn;
+      lookup calt_h_li;
+      lookup calt_h_ri;
+      lookup calt_h_rn;
+      lookup calt_i_li_ri;
+      lookup calt_i_li_rn;
+      lookup calt_i_li;
+      lookup calt_i_ri;
+      lookup calt_i_rn;
+      lookup calt_j_li_ri;
+      lookup calt_j_li_rn;
+      lookup calt_j_li;
+      lookup calt_j_ri;
+      lookup calt_j_rn;
+      lookup calt_k_li_ri;
+      lookup calt_k_li_rn;
+      lookup calt_k_li;
+      lookup calt_k_ri;
+      lookup calt_k_rn;
+      lookup calt_l_li_ri;
+      lookup calt_l_li_rn;
+      lookup calt_l_li;
+      lookup calt_l_ri;
+      lookup calt_l_rn;
+      lookup calt_m_li_ri;
+      lookup calt_m_li_rn;
+      lookup calt_m_li;
+      lookup calt_m_ri;
+      lookup calt_m_rn;
+      lookup calt_n_li_ri;
+      lookup calt_n_li_rn;
+      lookup calt_n_li;
+      lookup calt_n_ri;
+      lookup calt_n_rn;
+      lookup calt_o_li_ri;
+      lookup calt_o_li_rn;
+      lookup calt_o_li;
+      lookup calt_o_ri;
+      lookup calt_o_rn;
+      lookup calt_p_li_ri;
+      lookup calt_p_li_rn;
+      lookup calt_p_li;
+      lookup calt_p_ri;
+      lookup calt_p_rn;
+      lookup calt_q_li_ri;
+      lookup calt_q_li_rn;
+      lookup calt_q_li;
+      lookup calt_q_ri;
+      lookup calt_q_rn;
+      lookup calt_r_li_ri;
+      lookup calt_r_li_rn;
+      lookup calt_r_li;
+      lookup calt_r_ri;
+      lookup calt_r_rn;
+      lookup calt_s_li_ri;
+      lookup calt_s_li_rn;
+      lookup calt_s_li;
+      lookup calt_s_ri;
+      lookup calt_s_rn;
+      lookup calt_t_li_ri;
+      lookup calt_t_li_rn;
+      lookup calt_t_li;
+      lookup calt_t_ri;
+      lookup calt_t_rn;
+      lookup calt_u_li_ri;
+      lookup calt_u_li_rn;
+      lookup calt_u_li;
+      lookup calt_u_ri;
+      lookup calt_u_rn;
+      lookup calt_v_li_ri;
+      lookup calt_v_li_rn;
+      lookup calt_v_li;
+      lookup calt_v_ri;
+      lookup calt_v_rn;
+      lookup calt_w_li_ri;
+      lookup calt_w_li_rn;
+      lookup calt_w_li;
+      lookup calt_w_ri;
+      lookup calt_w_rn;
+      lookup calt_x_li_ri;
+      lookup calt_x_li_rn;
+      lookup calt_x_li;
+      lookup calt_x_ri;
+      lookup calt_x_rn;
+      lookup calt_y_li_ri;
+      lookup calt_y_li_rn;
+      lookup calt_y_li;
+      lookup calt_y_ri;
+      lookup calt_y_rn;
+      lookup calt_z_li_ri;
+      lookup calt_z_li_rn;
+      lookup calt_z_li;
+      lookup calt_z_ri;
+      lookup calt_z_rn;
+      lookup calt_A_ri;
+      lookup calt_A_rn;
+      lookup calt_H_ri;
+      lookup calt_H_rn;
+      lookup calt_K_ri;
+      lookup calt_K_rn;
+      lookup calt_L_ri;
+      lookup calt_L_rn;
+      lookup calt_M_ri;
+      lookup calt_M_rn;
+      lookup calt_R_ri;
+      lookup calt_R_rn;
+      lookup calt_U_ri;
+      lookup calt_U_rn;
+      lookup calt_Z_ri;
+      lookup calt_Z_rn;
+      lookup calt_J_ri;
+      lookup calt_J_rn;
+
+ script latn;
+    language dflt ;
+      lookup calt_a_li_ri;
+      lookup calt_a_li_rn;
+      lookup calt_a_li;
+      lookup calt_a_ri;
+      lookup calt_a_rn;
+      lookup calt_b_li_ri;
+      lookup calt_b_li_rn;
+      lookup calt_b_li;
+      lookup calt_b_ri;
+      lookup calt_b_rn;
+      lookup calt_c_li_ri;
+      lookup calt_c_li_rn;
+      lookup calt_c_li;
+      lookup calt_c_ri;
+      lookup calt_c_rn;
+      lookup calt_d_li_ri;
+      lookup calt_d_li_rn;
+      lookup calt_d_li;
+      lookup calt_d_ri;
+      lookup calt_d_rn;
+      lookup calt_e_li_ri;
+      lookup calt_e_li_rn;
+      lookup calt_e_li;
+      lookup calt_e_ri;
+      lookup calt_e_rn;
+      lookup calt_f_li_ri;
+      lookup calt_f_li_rn;
+      lookup calt_f_li;
+      lookup calt_f_ri;
+      lookup calt_f_rn;
+      lookup calt_g_li_ri;
+      lookup calt_g_li_rn;
+      lookup calt_g_li;
+      lookup calt_g_ri;
+      lookup calt_g_rn;
+      lookup calt_h_li_ri;
+      lookup calt_h_li_rn;
+      lookup calt_h_li;
+      lookup calt_h_ri;
+      lookup calt_h_rn;
+      lookup calt_i_li_ri;
+      lookup calt_i_li_rn;
+      lookup calt_i_li;
+      lookup calt_i_ri;
+      lookup calt_i_rn;
+      lookup calt_j_li_ri;
+      lookup calt_j_li_rn;
+      lookup calt_j_li;
+      lookup calt_j_ri;
+      lookup calt_j_rn;
+      lookup calt_k_li_ri;
+      lookup calt_k_li_rn;
+      lookup calt_k_li;
+      lookup calt_k_ri;
+      lookup calt_k_rn;
+      lookup calt_l_li_ri;
+      lookup calt_l_li_rn;
+      lookup calt_l_li;
+      lookup calt_l_ri;
+      lookup calt_l_rn;
+      lookup calt_m_li_ri;
+      lookup calt_m_li_rn;
+      lookup calt_m_li;
+      lookup calt_m_ri;
+      lookup calt_m_rn;
+      lookup calt_n_li_ri;
+      lookup calt_n_li_rn;
+      lookup calt_n_li;
+      lookup calt_n_ri;
+      lookup calt_n_rn;
+      lookup calt_o_li_ri;
+      lookup calt_o_li_rn;
+      lookup calt_o_li;
+      lookup calt_o_ri;
+      lookup calt_o_rn;
+      lookup calt_p_li_ri;
+      lookup calt_p_li_rn;
+      lookup calt_p_li;
+      lookup calt_p_ri;
+      lookup calt_p_rn;
+      lookup calt_q_li_ri;
+      lookup calt_q_li_rn;
+      lookup calt_q_li;
+      lookup calt_q_ri;
+      lookup calt_q_rn;
+      lookup calt_r_li_ri;
+      lookup calt_r_li_rn;
+      lookup calt_r_li;
+      lookup calt_r_ri;
+      lookup calt_r_rn;
+      lookup calt_s_li_ri;
+      lookup calt_s_li_rn;
+      lookup calt_s_li;
+      lookup calt_s_ri;
+      lookup calt_s_rn;
+      lookup calt_t_li_ri;
+      lookup calt_t_li_rn;
+      lookup calt_t_li;
+      lookup calt_t_ri;
+      lookup calt_t_rn;
+      lookup calt_u_li_ri;
+      lookup calt_u_li_rn;
+      lookup calt_u_li;
+      lookup calt_u_ri;
+      lookup calt_u_rn;
+      lookup calt_v_li_ri;
+      lookup calt_v_li_rn;
+      lookup calt_v_li;
+      lookup calt_v_ri;
+      lookup calt_v_rn;
+      lookup calt_w_li_ri;
+      lookup calt_w_li_rn;
+      lookup calt_w_li;
+      lookup calt_w_ri;
+      lookup calt_w_rn;
+      lookup calt_x_li_ri;
+      lookup calt_x_li_rn;
+      lookup calt_x_li;
+      lookup calt_x_ri;
+      lookup calt_x_rn;
+      lookup calt_y_li_ri;
+      lookup calt_y_li_rn;
+      lookup calt_y_li;
+      lookup calt_y_ri;
+      lookup calt_y_rn;
+      lookup calt_z_li_ri;
+      lookup calt_z_li_rn;
+      lookup calt_z_li;
+      lookup calt_z_ri;
+      lookup calt_z_rn;
+      lookup calt_A_ri;
+      lookup calt_A_rn;
+      lookup calt_H_ri;
+      lookup calt_H_rn;
+      lookup calt_K_ri;
+      lookup calt_K_rn;
+      lookup calt_L_ri;
+      lookup calt_L_rn;
+      lookup calt_M_ri;
+      lookup calt_M_rn;
+      lookup calt_R_ri;
+      lookup calt_R_rn;
+      lookup calt_U_ri;
+      lookup calt_U_rn;
+      lookup calt_Z_ri;
+      lookup calt_Z_rn;
+      lookup calt_J_ri;
+      lookup calt_J_rn;
+} calt;
