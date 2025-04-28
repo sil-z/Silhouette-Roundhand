@@ -2,7 +2,14 @@
 
 目前版本为1.0，后续待更新
 
-字体源文件待整理上传
+字体源文件位于src文件夹中，其中：
+
+- .fea文件为导入FontForge中的字形配置文件
+- .svg文件为使用Inkscape编辑的原始字形
+- ***_publish.svg文件为经过合并后可以直接使用FF打开的字形文件
+- stroke_to_path.bat文件用于将开放曲线转为闭合路径，因为OpenType的轮廓必须封闭
+- glyph_union_extension.py文件用于对转换闭合路径后的中间svg进行字形合并操作，必须安装旧版本（<1.0）的Inkscape，因为新版本似乎不支持此功能
+- 生成字体步骤待更新
 
 使用步骤（以Windows系统为例）：
 
