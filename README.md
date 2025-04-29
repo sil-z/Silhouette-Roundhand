@@ -1,5 +1,9 @@
 # Silhouette-Roundhand
 
+本字体个人商用免费，企业用途请联系作者。
+
+作者邮箱：zz7966587 AT gmail DOT com
+
 目前版本为1.0，后续待更新
 
 字体源文件位于src文件夹中，其中：
