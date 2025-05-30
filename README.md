@@ -24,4 +24,4 @@
 
 预览图：
 
-![example.png](example.png)
+![example.png](https://raw.githubusercontent.com/sil-z/Silhouette-Roundhand/refs/heads/main/example.png)
