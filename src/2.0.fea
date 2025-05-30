@@ -1,0 +1,109 @@
+languagesystem DFLT dflt;
+languagesystem latn dflt;
+
+@_a = [\a \a.li \a.ri \a.rn \a.li.ri \a.li.rn];
+@_b = [\b \b.li \b.ri \b.rn \b.li.ri \b.li.rn];
+@_c = [\c \c.li \c.ri \c.rn \c.li.ri \c.li.rn];
+@_d = [\d \d.li \d.ri \d.rn \d.li.ri \d.li.rn];
+@_e = [\e \e.li \e.ri \e.rn \e.li.ri \e.li.rn];
+@_f = [\f \f.li \f.ri \f.rn \f.li.ri \f.li.rn];
+@_g = [\g \g.li \g.ri \g.rn \g.li.ri \g.li.rn];
+@_h = [\h \h.li \h.ri \h.rn \h.li.ri \h.li.rn];
+@_i = [\i \i.li \i.ri \i.rn \i.li.ri \i.li.rn];
+@_j = [\j \j.li \j.ri \j.rn \j.li.ri \j.li.rn];
+@_k = [\k \k.li \k.ri \k.rn \k.li.ri \k.li.rn];
+@_l = [\l \l.li \l.ri \l.rn \l.li.ri \l.li.rn];
+@_m = [\m \m.li \m.ri \m.rn \m.li.ri \m.li.rn];
+@_n = [\n \n.li \n.ri \n.rn \n.li.ri \n.li.rn];
+@_o = [\o \o.li \o.ri \o.rn \o.li.ri \o.li.rn];
+@_p = [\p \p.li \p.ri \p.rn \p.li.ri \p.li.rn];
+@_q = [\q \q.li \q.ri \q.rn \q.li.ri \q.li.rn];
+@_r = [\r \r.li \r.ri \r.rn \r.li.ri \r.li.rn];
+@_s = [\s \s.li \s.ri \s.rn \s.li.ri \s.li.rn];
+@_t = [\t \t.li \t.ri \t.rn \t.li.ri \t.li.rn];
+@_u = [\u \u.li \u.ri \u.rn \u.li.ri \u.li.rn];
+@_v = [\v \v.li \v.ri \v.rn \v.li.ri \v.li.rn];
+@_w = [\w \w.li \w.ri \w.rn \w.li.ri \w.li.rn];
+@_x = [\x \x.li \x.ri \x.rn \x.li.ri \x.li.rn];
+@_y = [\y \y.li \y.ri \y.rn \y.li.ri \y.li.rn];
+@_z = [\z \z.li \z.ri \z.rn \z.li.ri \z.li.rn];
+
+@_A = [\A \A.rn \A.ri];
+@_H = [\H \H.rn \H.ri];
+@_K = [\K \K.rn \K.ri];
+@_L = [\L \L.rn \L.ri];
+@_M = [\M \M.rn \M.ri];
+@_R = [\R \R.rn \R.ri];
+@_U = [\U \U.rn \U.ri];
+@_Z = [\Z \Z.rn \Z.ri];
+@_J = [\J \J.rn \J.ri];
+
+@_li = [@_a @_b @_c @_d @_e @_f @_g @_h @_i @_j @_k @_l @_m @_n @_o @_p @_q @_r @_s @_t @_u @_v @_w @_x @_y @_z @_A @_H @_K @_L @_M @_R @_U @_Z @_J];
+@_ri = [@_a @_c @_d @_e @_g @_o @_q];
+@_rn = [@_m @_n @_r @_v @_x @_y @_z];
+
+@base_small_letters = [\a \b \c \d \e \f \g \h \i \j \k \l \m \n \o \p \q \r \s \t \u \v \w \x \y \z];
+
+@base_small_letters.li.ri = [\a.li.ri \b.li.ri \c.li.ri \d.li.ri \e.li.ri \f.li.ri \g.li.ri \h.li.ri \i.li.ri \j.li.ri
+               \k.li.ri \l.li.ri \m.li.ri \n.li.ri \o.li.ri \p.li.ri \q.li.ri \r.li.ri \s.li.ri \t.li.ri
+               \u.li.ri \v.li.ri \w.li.ri \x.li.ri \y.li.ri \z.li.ri];
+
+@base_small_letters.li.rn = [\a.li.rn \b.li.rn \c.li.rn \d.li.rn \e.li.rn \f.li.rn \g.li.rn \h.li.rn \i.li.rn \j.li.rn
+                             \k.li.rn \l.li.rn \m.li.rn \n.li.rn \o.li.rn \p.li.rn \q.li.rn \r.li.rn \s.li.rn \t.li.rn
+                             \u.li.rn \v.li.rn \w.li.rn \x.li.rn \y.li.rn \z.li.rn];
+
+@base_small_letters.li = [\a.li \b.li \c.li \d.li \e.li \f.li \g.li \h.li \i.li \j.li
+            \k.li \l.li \m.li \n.li \o.li \p.li \q.li \r.li \s.li \t.li
+            \u.li \v.li \w.li \x.li \y.li \z.li];
+
+@base_small_letters.ri = [\a.ri \b.ri \c.ri \d.ri \e.ri \f.ri \g.ri \h.ri \i.ri \j.ri
+            \k.ri \l.ri \m.ri \n.ri \o.ri \p.ri \q.ri \r.ri \s.ri \t.ri
+            \u.ri \v.ri \w.ri \x.ri \y.ri \z.ri];
+
+@base_small_letters.rn = [\a.rn \b.rn \c.rn \d.rn \e.rn \f.rn \g.rn \h.rn \i.rn \j.rn
+            \k.rn \l.rn \m.rn \n.rn \o.rn \p.rn \q.rn \r.rn \s.rn \t.rn
+            \u.rn \v.rn \w.rn \x.rn \y.rn \z.rn];
+
+@interval = [\apostrophe \quotation \period \colon \semicolon \question \comma \hyphen \exclamation \lp \rp \slash];
+
+lookup calt_small_letters {
+    sub @_li @interval @base_small_letters' @interval @_ri  by [@base_small_letters.li.ri ] ;
+    sub @_li @base_small_letters' @interval @_ri  by [@base_small_letters.li.ri ] ;
+    sub @_li @interval @base_small_letters' @_ri  by [@base_small_letters.li.ri ] ;
+    sub @_li @base_small_letters' @_ri  by [@base_small_letters.li.ri ] ;
+    sub @_li @interval @base_small_letters' @interval @_rn  by [@base_small_letters.li.rn ] ;
+    sub @_li @base_small_letters' @interval @_rn  by [@base_small_letters.li.rn ] ;
+    sub @_li @interval @base_small_letters' @_rn  by [@base_small_letters.li.rn ] ;
+    sub @_li @base_small_letters' @_rn  by [@base_small_letters.li.rn ] ;
+    sub @_li @interval @base_small_letters'       by [@base_small_letters.li ] ;
+    sub @_li @base_small_letters'       by [@base_small_letters.li ] ;
+    sub @base_small_letters' @interval @_ri       by [@base_small_letters.ri ] ;
+    sub @base_small_letters' @_ri       by [@base_small_letters.ri ] ;
+    sub @base_small_letters' @interval @_rn       by [@base_small_letters.rn ] ;
+    sub @base_small_letters' @_rn       by [@base_small_letters.rn ] ;
+} calt_small_letters;
+
+@base_large_letters = [\A \H \K \L \M \R \U \Z \J];
+
+@base_large_letters.ri = [\A.ri \H.ri \K.ri \L.ri \M.ri \R.ri \U.ri \Z.ri \J.ri];
+
+@base_large_letters.rn = [\A.rn \H.rn \K.rn \L.rn \M.rn \R.rn \U.rn \Z.rn \J.rn];
+
+lookup calt_large_letters {
+    sub @base_large_letters' @interval @_ri by [@base_large_letters.ri];
+    sub @base_large_letters' @_ri by [@base_large_letters.ri];
+    sub @base_large_letters' @interval @_rn by [@base_large_letters.rn];
+    sub @base_large_letters' @_rn by [@base_large_letters.rn];
+} calt_large_letters;
+
+feature calt {
+ script DFLT;
+    language dflt ;
+      lookup calt_small_letters;
+      lookup calt_large_letters;
+
+ script latn;
+    language dflt ;
+      lookup calt_small_letters;
+      lookup calt_large_letters;
+} calt;
