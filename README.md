@@ -10,17 +10,18 @@
 
 - .fea文件为导入FontForge中的字形配置文件
 - .svg文件为使用Inkscape编辑的原始字形
-- ***_publish.svg文件为经过合并后可以直接使用FF打开的字形文件
+- tilt_adjustment.py文件用于执行可能存在的斜度转换需求
 - stroke_to_path.bat文件用于将开放曲线转为闭合路径，因为OpenType的轮廓必须封闭
 - glyph_union_extension.py文件用于对转换闭合路径后的中间svg进行字形合并操作，必须安装旧版本（<1.0）的Inkscape，因为新版本似乎不支持此功能
+- get_glyph文件用于将合并后的路径元素转换为字形，使得文件成为能被FontForge直接读取的格式
 - 生成字体步骤待更新
 
 使用步骤（以Windows系统为例）：
 
 1. 双击打开.otf文件，点击安装
-2. 在设计软件中找到Silhouette's Roundhand字体，选择并应用
+2. 在设计软件中找到SilhouetteRoundhand字体，选择并应用
 
-注意事项：由于本字体使用了上下文连字特性，在Office和WPS中使用本字体必须选中希望应用字体的字符并启用上下文连字，否则字体将无法正常显示。
+注意事项：由于本字体使用了上下文连字特性，在Microsoft Office和WPS Office等办公软件中使用本字体必须选中希望应用字体的字符并启用上下文连字，否则字体将无法正常显示。
 
 预览图：
 
