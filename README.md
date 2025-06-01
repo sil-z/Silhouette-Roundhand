@@ -20,15 +20,12 @@ Font generation steps are to be updated.
 **How to use (example for Windows systems):**
 
 1. Double-click the .otf file and click "Install"
-
 2. In your text-input software, find the font named SilhouetteRoundhand, select and apply it
 
 **Note:** This font uses contextual ligature features. When using this font in office software such as Microsoft Office or WPS Office, you must:
 
 1. Select the characters you want to apply the font to
-
-2. Open the Font settings from the right-click menu
-
+2. Open the "Font" settings from the right-click menu
 3. In the "Opentype Features", under the "Advanced" tab, set "Ligatures" to "Standard and Contextual", and check the "Use Contextual Alternates" checkbox
 
 Otherwise, the natural connections between letters will not render correctly.
