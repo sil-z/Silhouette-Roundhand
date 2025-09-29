@@ -1,6 +1,15 @@
 # Silhouette-Roundhand
 
-**This font is free for personal use, including commercial use. For enterprise use, please contact the author. When using the font, please credit the source.**
+**This font is free for personal use, provided that the author (or any official source where the font was released) is credited in a detailed description near where the font is used. For example:**
+
+- For posters: Credit directly on the poster itself, or on any link the poster points to.
+- For trademarks: Credit on the official website’s information page, or everywhere the trademark is used.
+- For books: Credit in the references section or in any other part of the book.
+- For blogs or other online media: Credit within the original text.
+
+The above scenarios are not exhaustive. If, in practice, it is not possible to credit the author in any form, you must contact the author and purchase a commercial license, which then allows unrestricted use with peace of mind.
+
+Even in personal use cases, or when proper credit has already been given, additional sponsorship or donations to the author are always welcome.
 
 **Author's Email:** zz7966587 AT gmail DOT com
 
