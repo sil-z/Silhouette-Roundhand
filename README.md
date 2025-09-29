@@ -13,7 +13,7 @@ Even in personal use cases, or when proper credit has already been given, additi
 
 **Author's Email:** zz7966587 AT gmail DOT com
 
-**2025/5/31 Update:** Adjusted the font's tilt angle, set punctuation width to 0, added ligature rules for letters surrounding punctuation, modified some uppercase letters and digits, adjusted left spacing of uppercase letters, and updated the font preview image.
+**2025/5/31 Update:** Adjusted the font's tilt angle, set punctuation width to 0, added ligature rules for letters surrounding punctuation, modified some uppercase letters and digits, adjusted left spacing of uppercase letters, and updated the font preview image. Since this is an experimental work, it has many fundamental issues and will not be further optimized in the future.
 
 The source files of the font are located in the src folder, which includes:
 
@@ -56,7 +56,7 @@ If you're using Notepad, Adobe Illustrator, or rendering directly in a web brows
 
 **作者邮箱：** zz7966587 AT gmail DOT com
 
-**2025/5/31 更新：** 调整了字体斜度，将标点符号的宽度改为0并添加了标点两侧字母的连字规则，修改了部分大写和数字的字形，调整了大写左侧间距，更新了字体预览图。
+**2025/5/31 更新：** 调整了字体斜度，将标点符号的宽度改为0并添加了标点两侧字母的连字规则，修改了部分大写和数字的字形，调整了大写左侧间距，更新了字体预览图。由于这是一个实验作品，存在许多基本的问题，后续将不再进行优化。
 
 字体源文件位于src文件夹中，其中：
 
