@@ -1,13 +1,6 @@
 # Silhouette-Roundhand
 
-**This font is free for commercial use, provided that the author (or any official source where the font was released) is credited in a detailed description near where the font is used. For example:**
-
-- For posters: Credit directly on the poster itself, or on any link the poster points to.
-- For trademarks: Credit on the official website’s information page, or everywhere the trademark is used.
-- For books: Credit in the references section or in any other part of the book.
-- For blogs or other online media: Credit within the original text.
-
-The above scenarios are not exhaustive. If, in practice, it is not possible to credit the author in any form, you must contact the author and purchase a commercial license, which then allows unrestricted use with peace of mind.
+**This font is free for commercial use, provided that the author (or any official source where the font was released) is credited in a detailed description near where the font is used.**
 
 Even in personal use cases, or when proper credit has already been given, additional sponsorship or donations to the author are always welcome.
 
@@ -43,14 +36,7 @@ If you're using Notepad, Adobe Illustrator, or rendering directly in a web brows
 
 ---
 
-**本字体商用免费，前提是必须在字体被使用处附近的详细描述中注明作者（的任一字体发布来源），例如：**
-
-- 用于海报：直接在海报中，或在海报指向的任一链接中注明
-- 用于商标：在官方网站的说明页中注明，或在所有使用商标处均注明
-- 用于书籍：在书籍的参考资料部分或任意其他部分注明
-- 用于网络博客或其余形式载体：在原文中说明
-
-可能的使用场景并不局限于以上所列。如实际场景不便在任何地方注明作者，需要联系作者付费以购买商用版权，这样就可以心安理得地随意使用。
+**本字体商用免费，前提是必须在字体被使用处附近的详细描述中注明作者（的任一字体发布来源）**
 
 即使是在个人使用场景下或使用时已经注明作者，额外向作者赞助也是受欢迎的。
 
