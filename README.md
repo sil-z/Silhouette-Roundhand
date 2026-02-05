@@ -1,7 +1,5 @@
 # Silhouette-Roundhand
 
-One of my social media got banned. If you return here please contact me through my email.
-
 **This font is free for commercial use, provided that the author (or any official source where the font was released) is credited in a detailed description near where the font is used.**
 
 Even in personal use cases, or when proper credit has already been given, additional sponsorship or donations to the author are always welcome.
