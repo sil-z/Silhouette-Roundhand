@@ -1,9 +1,5 @@
 # Silhouette-Roundhand
 
-**This font is free for commercial use, provided that the author (or any official source where the font was released) is credited in a detailed description near where the font is used.**
-
-Even in personal use cases, or when proper credit has already been given, additional sponsorship or donations to the author are always welcome.
-
 **Author's Email:** zz7966587 AT gmail DOT com
 
 **2025/5/31 Update:** Adjusted the font's tilt angle, set punctuation width to 0, added ligature rules for letters surrounding punctuation, modified some uppercase letters and digits, adjusted left spacing of uppercase letters, and updated the font preview image. Since this is an experimental work, it has many fundamental issues and will not be further optimized in the future.
@@ -35,10 +31,6 @@ Otherwise, the natural connections between letters will not render correctly.
 If you're using Notepad, Adobe Illustrator, or rendering directly in a web browser, no additional settings are required.
 
 ---
-
-**本字体商用免费，前提是必须在字体被使用处附近的详细描述中注明作者（的任一字体发布来源）**
-
-即使是在个人使用场景下或使用时已经注明作者，额外向作者赞助也是受欢迎的。
 
 **作者邮箱：** zz7966587 AT gmail DOT com
 
